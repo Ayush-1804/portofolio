@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Header</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <!-- Left: Logo -->
+      <div class="logo" onclick="window.location.href='portfolio.html'" style="cursor: pointer;">
+         <span class="logo-text">Ayush</span>
+      </div>
+
+      <!-- Center: Navigation -->
+      <nav class="nav" id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Right: Social Icons -->
+      <div class="social">
+        <a href="https://github.com/Ayush-1804" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ayush-patra-18552435b/" target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </header>
+
+    <!-- Main / Home Section -->
+    <main id="home" class="section main">
+      <!-- Left: Description -->
+      <div class="main-left">
+        <h1>Hi, I'm <span class="highlight">Ayush</span></h1>
+        <p>
+          I'm a passionate <strong>Web Developer</strong> who loves building modern, responsive websites 
+          using <strong>HTML, CSS, and JavaScript</strong>.  
+          Currently exploring <strong>MongoDB</strong> and <strong>MySQL</strong> to craft full-stack solutions.
+        </p>
+        <button class="btn" onclick="location.href='#projects'">View My Projects</button>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="main-right">
+        <img src="image/main2-removebg-preview.png" alt="Ayush Patra emoji">
+      </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="about-content">
+        <h2>About <span class="highlight">Me</span></h2>
+        <p>
+          I’m <strong>Ayush Patra</strong>, a <strong>BSc IT graduate</strong> with strong skills in 
+          <strong>web and backend development</strong>, driven by a passion for building impactful solutions.
+        </p>
+        <p>
+          Through academic and hands-on projects, I’ve gained experience in 
+          <strong>team collaboration</strong>, <strong>project planning</strong>, and <strong>efficient delivery</strong>.
+        </p>
+        <p>
+          I’m eager to join a <strong>dynamic team</strong>, contribute to real-world applications, 
+          and continuously grow as a <strong>developer</strong>.
+        </p>
+        <button class="btn" onclick="location.href='#contact'">Connect with Me</button>
+      </div>
+    </section>
+ 
+
+  <section class="projects" id="projects">
+  <h2>Projects</h2>
+  
+  <div class="project-grid">
+
+    <!-- Project 1: VittaVidya -->
+    <div class="project-card">
+      <h3>VittaVidya</h3>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</p>
+      <ul>
+        <li>Forex Education Platform: Offers videos, eBooks, live charts, and quizzes.</li>
+        <li>Group chat and AI chatbot for user guidance.</li>
+        <li>Includes user registration and login for personalized access.</li>
+      </ul>
+      <img src="image/ss1.png" alt="VittaVidya Screenshot">
+      <a href="https://github.com/Ayush-1804/VITTAVIDYA-FOREX" target="_blank">GitHub</a>
+    </div>
+
+    <!-- Project 2: Petopia Care -->
+    <div class="project-card">
+      <h3>Petopia Care</h3>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</p>
+      <ul>
+        <li>Pet-Care Store: Sells medicines, food, and accessories for pets.</li>
+        <li>Dedicated pages for dogs, cats, birds, and fish.</li>
+        <li>Features user login, cart, and personalized checkout.</li>
+      </ul>
+      <img src="image/ss2.png" alt="Petopia Screenshot">
+      <a href="https://github.com/Ayush-1804/Petopia-Care" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2>My Skills</h2>
+
+  <!-- Frontend Skills -->
+  <div class="skill-category">
+    <h3>Frontend</h3>
+    <div class="skill">
+      <img src="image/html.png" alt="HTML Icon" class="skill-icon">
+      <span>HTML</span>
+      <div class="skill-bar">
+        <div class="skill-level html"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <img src="image/css.png" alt="CSS Icon" class="skill-icon">
+      <span>CSS</span>
+      <div class="skill-bar">
+        <div class="skill-level css"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <img src="image/js.png" alt="JavaScript Icon" class="skill-icon">
+      <span>JavaScript</span>
+      <div class="skill-bar">
+        <div class="skill-level js"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Skills -->
+  <div class="skill-category">
+    <h3>Databases</h3>
+    <div class="skill">
+      <img src="image/mongodb.png" alt="MongoDB Icon" class="skill-icon">
+      <span>MongoDB</span>
+      <div class="skill-bar">
+        <div class="skill-level mongodb"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <img src="image/mysql.png" alt="MySQL Icon" class="skill-icon">
+      <span>MySQL</span>
+      <div class="skill-bar">
+        <div class="skill-level mysql"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Programming Languages -->
+  <div class="skill-category">
+    <h3>Programming Languages</h3>
+    <div class="skill">
+      <img src="image/c++.png" alt="C++ Icon" class="skill-icon">
+      <span>C++</span>
+      <div class="skill-bar">
+        <div class="skill-level cpp"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <img src="image\ca.png" alt="C# Icon" class="skill-icon">
+      <span>C#</span>
+      <div class="skill-bar">
+        <div class="skill-level csharp"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <img src="image/java.png" alt="Java Icon" class="skill-icon">
+      <span>Java</span>
+      <div class="skill-bar">
+        <div class="skill-level java"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soft Skills -->
+  <div class="skill-category">
+    <h3>Soft Skills</h3>
+    <p>Leadership, Teamwork, Presentation, Moderate Communication, Problem-Solving, Time Management</p>
+  </div>
+</section>
+
+<section class="education" id="education">
+  <h2>Education</h2>
+
+  <div class="edu-card">
+    <h3>Bachelor of Science in Information Technology (BSc IT)</h3>
+    <p>SIES College, Mumbai | 2022 – 2025 | CGPA: 8.2</p>
+  </div>
+
+  <div class="edu-card">
+    <h3>HSC – Science Stream</h3>
+    <p>RJ Thakur School & Degree College, Thane | 2020 – 2022 | Percentage: 75%</p>
+  </div>
+
+  <div class="edu-card">
+    <h3>SSC</h3>
+    <p>St. Xaviers English High School, Thane | 2019 – 2020 | Percentage: 77.60%</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+    
+    <!-- Left side -->
+    <div class="contact-left">
+      <h2>Contact Me</h2>
+      <p>Let's connect! Reach out via social media or send me a message.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ayushh.patra/" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://github.com/Ayush-1804" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/ayush-patra-18552435b/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Right side: form -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+
+<div class="contact-right">
+  <div class="form-glass">
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="user_email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Ayush Patra. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://github.com/Ayush-1804" target="_blank"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/ayush-patra-18552435b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://www.instagram.com/ayushh.patra/" target="_blank"><i class='bx bxl-instagram'></i></a>
+      <a href="https://wa.me/919619337010" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+    </div>
+  </div>
+</footer>
+ </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
